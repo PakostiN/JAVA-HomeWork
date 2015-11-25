@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Zad3 {
+
+	public static void main(String[] args) {
+		Scanner test = new Scanner (System.in, "UTF-8");
+		System.out.println("Компания се нуждае от система за съхранение на информация за служители.  Направете програма, която изисква следната информация: Име, Фамилия, Години (0, 120), пол (еднобуквен 'м' или 'ж'), ЕГН, телефон. Подберете подходящите типове данни и декларирайте нужните променливи. Прочетете от конзолата нужната иформация за служител и след това изведете на конзолата");
+		String name = test.nextLine();
+		String family = test.nextLine();
+		byte years = test.nextByte();
+		char gender = test.next().charAt(0);
+		
+	}
+
+}

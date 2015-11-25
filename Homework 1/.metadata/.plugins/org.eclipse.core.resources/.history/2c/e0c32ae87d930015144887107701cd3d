@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Zad7 {
+
+	public static void main(String[] args) {
+		System.out.println("Напишете булев израз, който да проверява дали дадено цяло число се дели на 5 и на 7 без остатък. Изведете резултатът.");
+		int num = 34;
+		boolean result = num % 5 == 0 && num % 7 == 0;
+		System.out.println(result);
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Zad5 {
+
+	public static void main(String[] args) {
+		Scanner test = new Scanner (System.in, "UTF-8");
+		System.out.println("Напишете програма, която чете от конзолата четири числа от тип int и отпечатва тяхната сума.");
+		System.out.println(" ");
+		System.out.println("Въведете първото число: ");
+		int a = test.nextInt();
+		System.out.println("Въведете второто число: ");
+		int b = test.nextInt();
+		System.out.println("Въведете третото число: ");
+		int c = test.nextInt();
+		System.out.println("Въведете четвъртото число: ");
+		int d = test.nextInt();
+		int result = 0;
+		result = a+b+c+d;
+		System.out.println("Сборът на вашите числа е равен на: " + result);
+		test.close();
+
+	}
+
+}

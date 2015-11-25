@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Zad8 {
+
+	public static void main(String[] args) {
+		Scanner test = new Scanner (System.in, "UTF-8");
+		System.out.println("Напишете израз, който да проверява дали дадено цяло число е четно или нечетно. Изведете резултатът.");
+		int num = test.nextInt();
+		boolean result = num % 2 == 0;
+		System.out.println("Числото е четно: " + result);
+		System.out.println("Числото е нечетно: " + result);
+		test.close();				
+	}
+
+}

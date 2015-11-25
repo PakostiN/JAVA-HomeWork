@@ -1,0 +1,11 @@
+
+public class Zad4 {
+
+	public static void main(String[] args) {
+		System.out.println("ƒекларирайте променлива от тип String и отпечатайте следни€ стринг УI will read the УHarry PotterФ book collection.Ф ");
+		String str = "I will read the \"Harry Potter\" book collection.";
+		System.out.println(str);
+
+	}
+
+}

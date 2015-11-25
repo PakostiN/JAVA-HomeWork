@@ -1,0 +1,21 @@
+import org.omg.CORBA.IntHolder;
+
+public class Zad2 {
+
+	public static void main(String[] args) {
+		System.out.println("Дефинирайте две int променливи със стойности 5 и 8. Опитайте се да размените техните стойности.");
+		int num = 5;
+		int num1 = 8;
+		IntHolder
+		num = num1;
+		num1 = num;
+		
+
+		
+		System.out.println(num1);
+		System.out.println(num);
+		
+
+	}
+
+}

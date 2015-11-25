@@ -1,0 +1,17 @@
+
+public class Zad8 {
+
+	public static void main(String[] args) {
+		System.out.println("Напишете израз, който да проверява дали дадено цяло число е четно или нечетно. Изведете резултатът.");
+		int num = 2;
+		boolean result = num % 2 == 0;
+		System.out.println("Числото е четно: " + result);
+		boolean result1 = num % 2 != 0;
+		System.out.println("Числото е нечетно: " + result1);
+
+		
+		
+
+	}
+
+}
