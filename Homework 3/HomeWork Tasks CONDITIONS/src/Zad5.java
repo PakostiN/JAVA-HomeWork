@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Zad5 {
+
+	public static void main(String[] args) {
+		Scanner test = new Scanner(System.in);
+		System.out.println("Напишете програма, която приема три цели числа. Изведете на конзолата дали може да бъде бъде образуван триъгълник с дължини на страните  от въведените три числа.");
+		System.out.println("Въведете първата дължина: ");
+		int a = test.nextInt();
+		System.out.println("Въведете втората дължина: ");
+		int b = test.nextInt();
+		System.out.println("Въведете третата дължина: ");
+		int c = test.nextInt();
+		if (a < b + c && b < a + c && c < a + b){
+			System.out.println("Може да бъде образуван триъгълник със зададените от вас дължини!");
+		}
+		else {
+			System.out.println("НЕможе да бъде образуван триъгълник със зададените от вас дължини!");
+		}
+		
+		test.close();
+
+	}
+
+}
