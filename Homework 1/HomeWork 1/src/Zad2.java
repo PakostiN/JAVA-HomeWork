@@ -9,6 +9,14 @@ public class Zad2 {
 		num1 = result;
 		System.out.println("1st Int = " + num);
 		System.out.println("2nd Int = " + num1);
+		// ÂÒÎĞÈ ÂÀĞßÍÒ >>
+		int a = 5;
+		int b = 8;
+		a = a + b;
+		b = a - b;
+		a = a - b;
+		System.out.println(a);
+		System.out.println(b);
 		
 
 	}
