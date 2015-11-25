@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+D:\JAVA\JAVA програмиране\Homeworks\JAVA-HomeWork\Homework 3\ClassWork Tasks\.metadata\.plugins\org.eclipse.jdt.core
