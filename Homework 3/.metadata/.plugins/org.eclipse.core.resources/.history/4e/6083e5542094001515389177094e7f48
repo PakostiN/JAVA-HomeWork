@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public abstract class Zad9 {
+
+	public static void main(String[] args) {
+		Scanner test = new Scanner (System.in);
+		System.out.println("Напишете програма, която намира най-голямото от пет дадени числа.");
+		
+		System.out.println("Въведете първото число: ");
+		int a = test.nextInt();
+		System.out.println("Въведете второто число: ");
+		int b = test.nextInt();
+		System.out.println("Въведете третото число: ");
+		int c = test.nextInt();
+		System.out.println("Въведете четвъртото число: ");
+		int d = test.nextInt();
+		System.out.println("Въведете петото число: ");
+		int e = test.nextInt();
+		if (a > b || a > c || a > d || a > e){
+			
+		}
+		else if (b > a || b > c || b > d || b > e){
+			
+		}
+		else if (c > a || c > b || c > d || c > e){
+			
+		}
+		else if (d > a || d > b || d > c || d > e){
+			
+		}
+		else {
+			
+		}
+		test.close();
+
+	}
+	
+
+}

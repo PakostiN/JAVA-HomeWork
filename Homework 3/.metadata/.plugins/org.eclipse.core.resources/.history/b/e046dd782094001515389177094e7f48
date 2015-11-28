@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public abstract class Zad9 {
+
+	public static void main(String[] args) {
+		Scanner test = new Scanner (System.in);
+		System.out.println("Напишете програма, която намира най-голямото от пет дадени числа.");
+		System.out.println(" ");
+		System.out.println("Въведете първото число: ");
+		int num1 = test.nextInt();
+		System.out.println("Въведете второто число: ");
+		int num2 = test.nextInt();
+		System.out.println("Въведете третото число: ");
+		int num3 = test.nextInt();
+		System.out.println("Въведете четвъртото число: ");
+		int num4 = test.nextInt();
+		System.out.println("Въведете петото число: ");
+		int num5 = test.nextInt();
+		if (num1 > num2 || num1 > num3 || num1 > num4 || num1 > num5){
+			System.out.println("Числото: " + num1 + " е най-голямо от въведените от Вас пет числа!" );
+		}
+		else if (num2 > num1 || num2 > num3 || num2 > num4 || num2 > num5){
+			System.out.println("Числото: " + num2 + " е най-голямо от въведените от Вас пет числа!" );
+		}
+		else if (num3 > num1 || num3 > num2 || num3 > num4 || num3 > num5){
+			System.out.println("Числото: " + num3 + " е най-голямо от въведените от Вас пет числа!" );
+		}
+		else if (num4 > num1 || num4 > num2 || num4 > num3 || num4 > num5){
+			System.out.println("Числото: " + num4 + " е най-голямо от въведените от Вас пет числа!" );
+		}
+		else {
+			System.out.println("Числото: " + num5 + " е най-голямо от въведените от Вас пет числа!" );
+		}
+		test.close();
+
+	}
+	
+
+}
