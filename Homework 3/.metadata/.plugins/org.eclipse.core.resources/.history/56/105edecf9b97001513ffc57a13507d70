@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Zad3 {
+
+	public static void main(String[] args) {
+		System.out.println("Напишете програма, която чете от конзолата поредица от цели числа (примерно 5 числа) и отпечатва най-малкото и най-голямото от тях.");
+		Scanner test = new Scanner (System.in);
+		int min = 0;
+		int max = 0;
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Въведете число: ");
+			int num = test.nextInt();
+			if (num > max){
+				max = num;
+			}
+			else {
+				min = num;
+			}
+			
+		}
+		System.out.println("Най-голямото от въведените числа е: " + max);
+		System.out.println("Най-малкото от въведените числа е: " + min);
+		
+	}
+
+}
