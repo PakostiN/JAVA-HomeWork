@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Zad11 {
+
+	public static void main(String[] args) {
+		System.out.println("Напишете програма, която попълва квадратна матрица: първо вертикално, след това хоризонтално. Потребителя въвежда размерност на матрицата.");
+		Scanner test = new Scanner(System.in);
+		int n = test.nextInt();
+		int Array[][] = new int[n][n];
+		for (int row = 0; row < Array.length; row++) {
+			 row = test.nextInt();
+			for (int col = 0; col < Array.length; col++) {
+				col = test.nextInt();
+				System.out.println(Array[row][col]);
+			}
+		
+		}
+
+	}
+
+}

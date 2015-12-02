@@ -1,0 +1,9 @@
+
+public class Zad7 {
+
+	public static void main(String[] args) {
+		System.out.println("Напишете програма, която търси число в масив от числа и връща индекса на първото намерено число.");
+
+	}
+
+}
