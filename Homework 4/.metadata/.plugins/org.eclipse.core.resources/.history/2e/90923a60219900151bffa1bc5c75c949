@@ -1,0 +1,17 @@
+
+public class Zad9 {
+
+	public static void main(String[] args) {
+		System.out.println("Напишете програма, която обръща стойностите на един масив.");
+		int[] MyArray = { 1, 2, 3, 4, 5 };
+		int temp[] = MyArray;
+		for (int i = 0; i < MyArray.length; i++) {
+			if (temp[i] != MyArray[MyArray.length - i - 1]) {
+				System.out.println(temp[i]);
+				
+			} 
+
+
+		}
+	}
+}

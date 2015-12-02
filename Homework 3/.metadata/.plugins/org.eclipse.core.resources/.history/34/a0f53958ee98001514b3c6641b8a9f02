@@ -1,0 +1,26 @@
+import java.text.DecimalFormatSymbols;
+import java.util.Scanner;
+
+public class Zad10 {
+
+	public static void main(String[] args) {
+		Scanner test = new Scanner (System.in);
+		System.out.println("Напишете програма, която преобразува дадено число в интервала [0,999] в текст, съответващ на английското произношение. Пример:  0 -> zero; 11 -> eleven; 81 -> eighty one; 817 -> eight hundred seventeen");
+		int num = test.nextInt();
+		int ones = 0;
+		int tens = 0;
+		int hundreds = 0;
+		int elevens = 0;
+		if (num % 100 >= 100 && num % 100 <= 999){
+			hundreds = num;
+		}
+		switch (hundreds) {
+		case 1:
+			System.out.println("One hundred");
+			break;
+
+		default:
+			break;
+		}
+	}
+}

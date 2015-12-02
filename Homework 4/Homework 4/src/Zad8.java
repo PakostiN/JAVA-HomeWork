@@ -3,22 +3,16 @@ public class Zad8 {
 
 	public static void main(String[] args) {
 		System.out.println("Напишете програма, която проверява дали един масив е симетричен.");
-		int[] MyArray = {1,2,5,2,1};
-		for (int i = 0; i < MyArray.length; i++) {	
-			if(MyArray[0] == MyArray[4] && MyArray[1] == MyArray[3]){
-				System.out.println("Масивът е симетричен!");
-				break;
-			}
-			else {
+		int[] MyArray = { 1, 2, 5, 8, 1 };
+		for (int i = 0; i < MyArray.length; i++) {
+			if (MyArray[i] != MyArray[MyArray.length - i - 1]) {
 				System.out.println("Масивът не е симетричен");
-				break;
-			}
-			
-					
-				
-			
+				return;
+			} 
+
 		}
-		
+		System.out.println("Масивът е симетричен!");
+
 	}
 
 }

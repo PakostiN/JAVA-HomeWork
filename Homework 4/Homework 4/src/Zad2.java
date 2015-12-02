@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class Zad2 {
 
 	public static void main(String[] args) {
 		System.out.println("Напишете програма, която попълва числата на Фибоначи в масив. Потребител въвежда колко да е голям масива.");
-		int[] Fib = new int[50];
+		Scanner test = new Scanner (System.in);
+		System.out.println("Въведете колко да бъде голям масива: ");
+		int n = test.nextInt();
+		int[] Fib = new int[n];
 		Fib[0] = 0;
 		Fib[1] = 1;
 		System.out.println("Fibo[0] = 0");
@@ -12,6 +17,8 @@ public class Zad2 {
 			Fib[i] = Fib[i - 1] + Fib[i - 2];
 			System.out.println("Fib[[" + i + "]]" + " = " + Fib[i]);
 	}
+	test.close();
 	}
+	
 
 }
