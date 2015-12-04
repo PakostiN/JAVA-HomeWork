@@ -9,18 +9,21 @@ public class Zad1 {
 		int delimo = test.nextInt();
 		System.out.println("Въведете делител: ");
 		int delitel = test.nextInt();
-		if(delimo > 0 && delitel > 0){
-			System.out.println("+");
+		if (delimo < 0 && delitel < 0){
+			System.out.println(" + ");
 		}
 		else if (delimo < 0 && delitel > 0){
-			System.out.println("-");
+			System.out.println(" - ");
 		}
 		else if (delimo > 0 && delitel < 0){
-			System.out.println("-");
+			System.out.println(" - ");
 		}
-		else if (delimo < 0 && delitel < 0){
-			System.out.println("+");
+		else {
+			System.out.println(" + ");
 		}
 		test.close();
-}
+
+
 	}
+
+}

@@ -5,10 +5,10 @@ public class Zad10 {
 
 
 	public static void main(String[] args) {
-		Scanner test = new Scanner(System.in);
+		Scanner test = new Scanner (System.in);
 		System.out.println("Input Number");
 		int num = test.nextInt();
-		if (num < 0 && num > 999) {
+		if (num < 0 && num > 999){
 			System.out.println("Wrong number");
 			String hundreds = "";
 			String tens = "";
@@ -22,7 +22,7 @@ public class Zad10 {
 				break;
 			case 2:
 				hundreds = "Two Hundred";
-				break;
+			break;
 			case 3:
 				hundreds = "Three Hundred";
 				break;
@@ -45,16 +45,16 @@ public class Zad10 {
 				hundreds = "Nine Hundred";
 				break;
 			}
-
+			System.out.println(hundreds + " " + tens + " " + ones);
 			int Ostatak = num % 100;
-			if (Ostatak < 20 && Ostatak > 9) {
+			if (Ostatak < 20 && Ostatak > 9){
 				switch (Ostatak) {
 				case 10:
 					tens = "Ten";
 					break;
 				case 11:
 					tens = "Eleven";
-					break;
+				break;
 				case 12:
 					tens = "Twelve";
 					break;
@@ -78,12 +78,13 @@ public class Zad10 {
 					break;
 				case 19:
 					tens = "Nineteen";
-					break;
+					break;				
 				}
 				System.out.println(hundreds + " " + tens);
-			} else {
-				int tenz = Ostatak / 10;
-				switch (tenz) {
+			}
+			else {
+				int tenss = Ostatak / 10;
+				switch (tenss) {
 				case 2:
 					tens = "Twenty";
 					break;
@@ -93,7 +94,7 @@ public class Zad10 {
 				case 4:
 					tens = "Fourty";
 					break;
-				case 5:
+				case 5:					
 					tens = "Fifty";
 					break;
 				case 6:
@@ -109,7 +110,7 @@ public class Zad10 {
 					tens = "Ninety";
 					break;
 				}
-
+				System.out.println(hundreds + " " + tens);
 			}
 			int onez = Ostatak % 10;
 			switch (onez) {
@@ -144,8 +145,8 @@ public class Zad10 {
 				break;
 			}
 			System.out.println(hundreds + " " + tens + " " + ones);
-			test.close();
-		}
+		test.close();
 	}
-
-}
+		}
+		
+	}

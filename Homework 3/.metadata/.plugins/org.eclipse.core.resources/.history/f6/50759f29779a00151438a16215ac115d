@@ -1,0 +1,166 @@
+import java.util.Scanner;
+
+public class Zad1 {
+	
+	//ВАЖНО ЗА ЗАДАЧАТА
+	//АКО ИМАМЕ ЧИСЛОТО 854
+	//ЦИФРАТА НА СТОТИЦИТЕ Е 8
+	//ЦИФРАТА НА ДЕСЕТИЦИТЕ Е 5
+	//ЦИФРАТА НА ЕДИНИЦИТЕ Е 4
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int num = input.nextInt();
+		if (num < 0 && num > 999) {
+			System.out.println("Wrong number!");
+		}
+		String stot = "";
+		String deset = "";
+		String edin = "";
+
+		//Намираме цифрата на стотицитеи ако има такава я превръшаме във String чрез switch от тази цифра.
+		//Ако числото беше 915 ще получим 9 и ще изберем nine hundred.
+		//Ако числото беше 73 ще получи 0 и няма да изберем нищо за стотици.
+		int st = num / 100;
+		switch (st) {
+		case 0:
+			break;
+		case 1:
+			stot = "one hundred";
+			break;
+		case 2:
+			stot = "two hundred";
+			break;
+		case 3:
+			stot = "three hundred";
+			break;
+		case 4:
+			stot = "four hundred";
+			break;
+		case 5:
+			stot = "five hundred";
+			break;
+		case 6:
+			stot = "six hundred";
+			break;
+		case 7:
+			stot = "seven hundred";
+			break;
+		case 8:
+			stot = "eight hundred";
+			break;
+		case 9:
+			stot = "nine hundred";
+			break;
+		}
+		//Намираме колко е числото без стотиците и ако е в интервала от 10 до 19 му даваме диретно стойност понеже те се изписват специално (eleven, twelve и др.).
+		//Ако числото ни беше 915 ще получим 15 и ще изберем fifteen.
+		//Ако числото ни беше 73 ще получим 73 и няма да влезем никъде тук.
+		int ost = num % 100;
+		if (ost < 20 && ost > 9) {
+			switch (ost) {
+			case 10:
+				deset = "ten";
+				break;
+			case 11:
+				deset = "eleven";
+				break;
+			case 12:
+				deset = "twelve";
+				break;
+			case 13:
+				deset = "thirtheen";
+				break;
+			case 14:
+				deset = "fourteen";
+				break;
+			case 15:
+				deset = "fifteen";
+				break;
+			case 16:
+				deset = "sixteen";
+				break;
+			case 17:
+				deset = "seventeen";
+				break;
+			case 18:
+				deset = "eighteen";
+				break;
+			case 19:
+				deset = "nineteen";
+				break;
+			}
+			System.out.println(stot + " " + deset);
+		} else {
+			//Ако числото не е от специалните двуцифрени (10 до 19) му вземемe цифрата на десетиците и избираме съответната им стойност. Превръщаме я в String чрез switch.
+			//Ако числото ни е 931 ще получи 3 и ще вземем thirty.
+			//Aко числото ни е 73 ще получим 7 за десетици seventy.
+			int des = ost / 10;
+			switch (des) {
+			case 2:
+				deset = "twenty";
+				break;
+			case 3:
+				deset = "thirty";
+				break;
+			case 4:
+				deset = "fourty";
+				break;
+			case 5:
+				deset = "fifty";
+				break;
+			case 6:
+				deset = "sixty";
+				break;
+			case 7:
+				deset = "seventy";
+				break;
+			case 8:
+				deset = "eighty";
+				break;
+			case 9:
+				deset = "ninety";
+				break;
+			}
+		}
+			//Тук вземаме стойността на единиците и отново я превръщаме в String чрез switch.
+			//Ако числото ни беше 931 ще получим 1 и ще вземем one.
+			//Aко числото ни беше 73 ще получим 3 и ще вземем three.
+			int ed = ost % 10;
+			switch (ed) {
+			case 0:
+				break;
+			case 1:
+				edin = "one";
+				break;
+			case 2:
+				edin = "two";
+				break;
+			case 3:
+				edin = "three";
+				break;
+			case 4:
+				edin = "four";
+				break;
+			case 5:
+				edin = "five";
+				break;
+			case 6:
+				edin = "six";
+				break;
+			case 7:
+				edin = "seven";
+				break;
+			case 8:
+				edin = "eight";
+				break;
+			case 9:
+				edin = "nine";
+				break;
+			}
+			System.out.println(stot + " " + deset + " " + edin);
+		input.close();
+	}
+
+}
